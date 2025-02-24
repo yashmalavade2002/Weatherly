@@ -2,6 +2,9 @@
 
 Weatherly is a simple and elegant weather application that provides real-time weather updates using an API. The app fetches live weather data, including temperature, humidity, and wind speed, and displays it in an intuitive UI built with HTML, CSS, and JavaScript.
 
+🔗 [**Click here to view the demo**](https://vercel.com/yash-malvades-projects/weatherly)
+
+
 ---
 
 ## 📌 Features
