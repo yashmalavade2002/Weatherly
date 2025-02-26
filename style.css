@@ -1,0 +1,261 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+/* Body Styling */
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+/* Container */
+.container {
+    width: 400px;
+    height: min-content;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+/* Search Box */
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input {
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #000;
+    background-color: #e6f5fb;
+    padding: 12px 16px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+.search-box input::placeholder {
+    color: #000;
+}
+
+.search-box button {
+    width: 46px;
+    height: 46px;
+    background-color: #e6f5fb;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.search-box button:hover {
+    color: #fff;
+    background-color: #ababab;
+}
+
+/* Weather Body */
+.weather-body {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.weather-body img {
+    width: 60%;
+    border-radius: 20px;
+}
+
+/* Weather Box */
+.weather-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.weather-box .temperature {
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.weather-box .temperature sup {
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+}
+
+.weather-box .description {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* Weather Details - Using Grid for Alignment */
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Individual Sections */
+.humidity,
+.wind,
+.local-time,
+.local-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    background: rgba(230, 245, 251, 0.5);
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Icons */
+.weather-details i {
+    font-size: 22px;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 450px) {
+    .weather-details {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .humidity,
+    .wind,
+    .local-time,
+    .local-date {
+        width: 100%;
+    }
+}
+
+/* Time and Date Styling */
+.time-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.local-time,
+.local-date {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+.local-time i,
+.local-date i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+/* Location Not Found */
+.location-not-found {
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.location-not-found h1 {
+    font-size: 20px;
+    color: #6b6b6b;
+    margin-bottom: 15px;
+}
+
+.location-not-found img {
+    width: 80%;
+    border-radius: 20px;
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode .container {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .search-box input {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-mode .search-box button {
+    background-color: #666;
+    color: #fff;
+}
+
+.dark-mode .weather-details i {
+    color: #fff;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #e6f5fb;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, color 0.3s ease;
+    z-index: 1000;
+}
+
+.dark-mode-btn i {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+    background-color: #ababab;
+}
+
+.dark-mode .dark-mode-btn {
+    background-color: #555;
+}
+
+.dark-mode .dark-mode-btn i {
+    color: #fff;
+}
