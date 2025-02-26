@@ -13,6 +13,8 @@ Weatherly is a simple and elegant weather application that provides real-time we
 - 🎨 User-friendly and responsive UI.
 - 📡 Fetches live weather data using an API.
 - ⏳ Dynamic updates and animations based on weather conditions.
+- 🕰️ Local Time & Date – Displays accurate time and date for the searched city.
+- 🌗 Dark & Light Mode – Toggle between themes for a better UI/UX experience.
 
 ---
 
