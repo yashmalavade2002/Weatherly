@@ -28,7 +28,7 @@ Weatherly is a simple and elegant weather application that provides real-time we
 ---
 
 ## 📷 Snapshot
-![Weatherly Screenshot](https://github.com/yashmalavade2002/Weatherly/blob/b82b03687a44fb3962a54c3bc3db9688e0fcc339/Snapshot.jpg)
+![Weatherly Screenshot](https://github.com/yashmalavade2002/Weatherly/blob/6404e297eb948a092185e25b897866ec9b73cf25/snapshot.png)
 
 ---
 
